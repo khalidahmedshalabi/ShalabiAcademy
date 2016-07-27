@@ -1,0 +1,66 @@
+/* small screens */
+@media screen and (max-width: 48em)
+{
+    .logo
+    {
+        font-size: 80%;
+    }
+
+    .header
+    {
+        height:15%;
+    }
+
+    .header_button_container
+    {
+        top:9%;
+        right: 3%;
+        background-color: #000000;
+        display: none;
+        z-index: 1;
+    }
+
+    .banner_title
+    {
+        font-size: 180%;
+    }
+
+    .welcome_text_container
+    {
+        width: 60%;
+    }
+
+    .header_toggle
+    {
+        display: block;
+        float:right;
+        text-align: right;
+        margin:3%;
+        color:white;
+        background-color:black;
+        font-size: 150%;
+        padding:1%;
+    }
+
+    .header_button
+    {
+        display: block;
+    }
+
+    .StartLearningButton
+    {
+        font-size: 100%;
+    }
+
+    .item_year
+    {
+        display: block;
+        width: 80%;
+        margin: 2%;
+    }
+
+    .side_bar
+    {
+        width: 30%;
+    }
+}
