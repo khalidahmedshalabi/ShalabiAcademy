@@ -257,8 +257,7 @@ body
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
-    height:auto;
-    min-height: 70%;
+    height:80%;
 }
 
 .section_singlefeature
