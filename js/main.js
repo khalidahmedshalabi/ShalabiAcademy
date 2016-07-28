@@ -8,6 +8,13 @@ $(".StartLearningButton").click(function(e)
 	});
 });
 
+$(".start_learning_coffee").css('display', 'none');
+setInterval(function () {
+	$(".start_learning_coffee").fadeOut(1000, function() {
+			$(".start_learning_coffee").fadeIn(1000);
+		});
+}, 1000);
+
 var banner_title_ct = 0;
 
 function ChangeBannerTitle()
