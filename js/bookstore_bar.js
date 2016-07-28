@@ -1,3 +1,4 @@
+$(".side_bar").css('display', 'none');
 var SideBarShown = false;
 
 function FixSideBarHeight()
@@ -32,7 +33,7 @@ $(".side_bar").hover(function() {
 
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     if($(window).scrollTop() >= $(".section_learning").offset().top)
     {
         $(".side_bar").css('display', 'block');
@@ -43,13 +44,13 @@ $(document).ready(function () {
     {
         $(".side_bar").css('display', 'none');
     }
-});
+});*/
 
 $(window).resize(function()
 {
     FixSideBarHeight();
 });
-
+/*
 $(window).scroll(function(event) {
     if($(window).scrollTop() >= $(".section_learning").offset().top - 50)
     {
@@ -60,4 +61,4 @@ $(window).scroll(function(event) {
     {
         $(".side_bar").css('display', 'none');
     }
-});
+});*/
