@@ -1,4 +1,3 @@
-$(".side_bar").css('display', 'none');
 var SideBarShown = false;
 
 function FixSideBarHeight()

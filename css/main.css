@@ -145,6 +145,7 @@ body
 
 .side_bar
 {
+    display: none;
     border-style:solid;
     border-width:medium;
     border-color:#732E09;
