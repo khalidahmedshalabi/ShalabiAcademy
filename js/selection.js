@@ -5,6 +5,9 @@ $(".gobackhomepage").click(function(event) {
 $(".gobackhomepage").slideDown(500);
 
 $(".subject_element").click(function(event) {
+    $(".subject_element").not(this).css('background-color', '#EEEEEE');
+    $(this).css('background-color', '#AAAAAA');
+
     $("html, body").animate(
 	{
 		scrollTop: $(".section_show").offset().top
