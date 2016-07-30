@@ -59,6 +59,16 @@ body
     color: #777777;
 }
 
+.subject_subtitle
+{
+    margin-bottom: 6%;
+    font-family: 'Titillium Web', sans-serif;
+    padding:0.5%;
+    font-size: 120%;
+    background-color: #CCCCCC;
+    color: #555555;
+}
+
 .subject_element
 {
     font-family: 'Roboto Condensed', sans-serif;
