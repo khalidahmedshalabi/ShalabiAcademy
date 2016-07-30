@@ -95,6 +95,17 @@ body
     font-size: 270%;
 }
 
+.section_show_subtitle
+{
+    text-align: center;
+    background-color: #222222;
+    color: #CCCCCC;
+    font-family: 'Dosis', sans-serif;
+    font-weight:bolder;
+    font-size: 160%;
+    padding: 2%;
+}
+
 .show_container
 {
     width: 100%;
