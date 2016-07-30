@@ -1,3 +1,31 @@
+function ShouldShowScrollToTop()
+{
+	if($(window).scrollTop() >= $(".section_singlefeature").offset().top - 200)
+	{
+		$(".scrolltotop").css('display', 'block');
+	}
+	else
+	{
+		$(".scrolltotop").css('display', 'none');
+	}
+}
+
+$(document).ready(function () {
+    ShouldShowScrollToTop();
+});
+
+$(window).scroll(function(event) {
+    ShouldShowScrollToTop();
+});
+
+$(".scrolltotop").click(function(e)
+{
+	$("html, body").animate(
+	{
+		scrollTop: 0
+	});
+});
+
 $(".logo").fadeIn(2000);
 
 $(".StartLearningButton").click(function(e)

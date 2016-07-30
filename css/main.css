@@ -39,6 +39,19 @@ body
     font-family: 'Dosis', sans-serif;
 }
 
+.scrolltotop
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #AAAAAA;
+    font-size: 280%;
+    padding: 1%;
+    border-radius: 3%;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
 .header
 {
     background: rgb(69,72,77);
