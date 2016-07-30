@@ -74,6 +74,7 @@ body
     border-style: solid;
     border-color: #EEEEEE;
     border-width: thin;
+    border-radius: 6%;
 }
 
 .subject_element:hover
