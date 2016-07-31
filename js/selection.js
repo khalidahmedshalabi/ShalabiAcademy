@@ -15,3 +15,28 @@ $(".subject_element").click(function(event) {
 		scrollTop: $(".section_show").offset().top
 	});
 });
+
+function LoadLesson(path)
+{
+    $(".video_loader").load(path + '/video.txt',
+        function(response, status, xhr)
+        {
+            if (status == "error")
+            {
+                $(".video_loader").html("<span class='loader_error'>Video is not available at the moment</span>");
+            }
+        }
+    );
+
+    $(".paper_loader").load(path + '/paper.txt',
+        function(response, status, xhr)
+        {
+            if (status == "error")
+            {
+                $(".paper_loader").html("<span class='loader_error'>PDF is not available at the moment</span>");
+            }
+        }
+    );
+}
+
+$(".default_lesson").trigger('click');
