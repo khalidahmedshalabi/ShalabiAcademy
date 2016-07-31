@@ -38,5 +38,3 @@ function LoadLesson(path)
         }
     );
 }
-
-$(".default_lesson").trigger('click');
