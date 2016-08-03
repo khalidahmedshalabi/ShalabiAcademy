@@ -5,10 +5,10 @@ $(".gobackhomepage").click(function(event) {
 $(".gobackhomepage").slideDown(500);
 
 $(".subject_element").click(function(event) {
-    $(".subject_element").not(this).css('border-color', '#EEEEEE');
-    $(".subject_element").not(this).css('background-color', '#EEEEEE');
-    $(this).css('border-color', '#AAAAAA');
-    $(this).css('background-color', '#AAAAAA');
+    $(".subject_element").not(this).css('border-color', '#CCCCCC');
+    $(".subject_element").not(this).css('background-color', '#CCCCCC');
+    $(this).css('border-color', '#111111');
+    $(this).css('background-color', '#BBBBBB');
 
     $("html, body").animate(
 	{

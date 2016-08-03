@@ -7,7 +7,14 @@ body
     padding: 0;
 	margin:0;
 
-    background-color: #EEEEEE;
+    background: rgba(43,43,43,1);
+    background: -moz-linear-gradient(left, rgba(43,43,43,1) 13%, rgba(43,43,43,1) 46%, rgba(41,41,41,1) 75%, rgba(41,41,41,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(13%, rgba(43,43,43,1)), color-stop(46%, rgba(43,43,43,1)), color-stop(75%, rgba(41,41,41,1)), color-stop(100%, rgba(41,41,41,1)));
+    background: -webkit-linear-gradient(left, rgba(43,43,43,1) 13%, rgba(43,43,43,1) 46%, rgba(41,41,41,1) 75%, rgba(41,41,41,1) 100%);
+    background: -o-linear-gradient(left, rgba(43,43,43,1) 13%, rgba(43,43,43,1) 46%, rgba(41,41,41,1) 75%, rgba(41,41,41,1) 100%);
+    background: -ms-linear-gradient(left, rgba(43,43,43,1) 13%, rgba(43,43,43,1) 46%, rgba(41,41,41,1) 75%, rgba(41,41,41,1) 100%);
+    background: linear-gradient(to right, rgba(43,43,43,1) 13%, rgba(43,43,43,1) 46%, rgba(41,41,41,1) 75%, rgba(41,41,41,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#292929', GradientType=1 );
 }
 
 .gobackhomepage
@@ -20,7 +27,7 @@ body
     cursor: pointer;
     border-radius: 3%;
 
-    background-color: #111111;
+    background-color: #222222;
     display: none;
 }
 
@@ -46,8 +53,8 @@ body
     text-align: center;
     margin-right: 4%;
     margin-left: 4%;
-    background-color: #DDDDDD;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 19px 0 rgba(0, 0, 0, 0.29);
+    background-color: #AAAAAA;
+    box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.2), 0 9px 19px 0 rgba(0, 0, 0, 0.29);
 }
 
 .subject_title
@@ -55,8 +62,8 @@ body
     font-family: 'Titillium Web', sans-serif;
     padding:1%;
     font-size: 150%;
-    background-color: #FFFFFF;
-    color: #777777;
+    background-color: #EEEEEE;
+    color: #555555;
 }
 
 .subject_subtitle
@@ -76,13 +83,13 @@ body
     color: white;
     margin: 1.5%;
     color: #444444;
-    background-color: #EEEEEE;
+    background-color: #CCCCCC;
     font-weight: normal;
     display: inline-block;
     padding: 3%;
     cursor: pointer;
     border-style: solid;
-    border-color: #EEEEEE;
+    border-color: #CCCCCC;
     border-width: thin;
     border-radius: 6%;
 }
@@ -95,7 +102,7 @@ body
 .section_show_title
 {
     text-align: center;
-    color: #777777;
+    color: #BBBBBB;
     font-family: 'Dosis', sans-serif;
     font-weight:bolder;
     font-size: 270%;
@@ -104,7 +111,7 @@ body
 .section_show_subtitle
 {
     text-align: center;
-    background-color: #222222;
+    background-color: #111111;
     color: #CCCCCC;
     font-family: 'Dosis', sans-serif;
     font-weight:bolder;
