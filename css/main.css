@@ -334,6 +334,13 @@ a
     box-shadow: 10px 10px 15px 20px rgba(0, 0, 0, 0.2), 10px 10px 15px 20px rgba(0, 0, 0, 0.19);
 }
 
+.section_features_element
+{
+    text-align: left;
+    margin-left: 9%;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .section_socialmedia
 {
     background: rgba(138,138,138,1);
