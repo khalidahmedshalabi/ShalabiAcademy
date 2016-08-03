@@ -54,7 +54,9 @@ body
     margin-right: 4%;
     margin-left: 4%;
     background-color: #AAAAAA;
-    box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.2), 0 9px 19px 0 rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
+    -moz-box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
+    box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
 }
 
 .subject_title
