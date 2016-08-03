@@ -393,6 +393,34 @@ a
     }
 }
 
+.hashtag
+{
+    font-size: 70%;
+    background-color:rgba(0,0,0, 0.1);
+    padding: 1%;
+    margin: 3%;
+    text-decoration: none;
+    border-radius: 4%;
+}
+
+.hashtag:hover
+{
+    animation-name: hashtag_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hashtag_anim
+{
+    to
+    {
+        background-color:rgba(0,0,0, 0.2);
+    }
+}
+
 .section_singlefeature:hover
 {
     animation-name: section_shadow_anim;
