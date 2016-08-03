@@ -89,7 +89,7 @@ $(".banner_title").ready(function () {
     }, 3000);
 });
 
-$(".section_learning, .section_features, .section_singlefeature").hover(function() {
+$(".moving_section").hover(function() {
 	$(this).animate({fontSize: "+=3%"}, {duration: 500, queue: false});
 }, function() {
 	$(this).animate({fontSize: "100%"}, {duration: 500, queue: false});
