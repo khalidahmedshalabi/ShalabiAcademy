@@ -7,8 +7,10 @@ $(".gobackhomepage").slideDown(500);
 $(".subject_element").click(function(event) {
     $(".subject_element").not(this).css('border-color', '#CCCCCC');
     $(".subject_element").not(this).css('background-color', '#CCCCCC');
+    $(".subject_element").not(this).css('font-weight', 'normal');
     $(this).css('border-color', '#111111');
     $(this).css('background-color', '#BBBBBB');
+    $(this).css('font-weight', 'bolder');
 
     $("html, body").animate(
 	{
