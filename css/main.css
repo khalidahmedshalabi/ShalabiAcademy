@@ -158,13 +158,29 @@ a
     border-color: white;
     border-bottom-width: medium;
     border-left-width: medium;
+    border-radius: 5%;
 }
 
 .header_button:hover
 {
-    background-color: white;
-    color: black;
-    padding-bottom: 2%;
+    animation-name: header_button_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes header_button_anim
+{
+    to
+    {
+        background-color: white;
+        color: black;
+        padding-bottom: 2%;
+        font-weight: bolder;
+    }
 }
 
 .side_bar
