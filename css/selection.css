@@ -20,21 +20,34 @@ body
 .gobackhomepage
 {
     margin:2%;
-    color: #AAAAAA;
     padding: 1%;
+    border-radius: 3%;
     font-size: 150%;
     font-family: 'Dosis', sans-serif;
     cursor: pointer;
-    border-radius: 3%;
-
     background-color: #222222;
+    color: #AAAAAA;
     display: none;
 }
 
 .gobackhomepage:hover
 {
-    background-color: #333333;
-    color: #FFFFFF;
+    animation-name: gobackhomepage_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gobackhomepage_anim
+{
+    to
+    {
+        border-radius: 5%;
+        background-color: #333333;
+        color: #FFFFFF;
+    }
 }
 
 .subject_container
@@ -92,13 +105,26 @@ body
     cursor: pointer;
     border-style: solid;
     border-color: #CCCCCC;
-    border-width: thin;
+    border-width: medium;;
     border-radius: 6%;
 }
 
-.section_show
+.subject_element:hover
 {
+    animation-name: subject_element_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
 
+@keyframes subject_element_anim
+{
+    to
+    {
+        border-color: #999999;
+    }
 }
 
 .section_show_title
