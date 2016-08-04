@@ -3,7 +3,7 @@
 {
     .logo
     {
-        font-size: 80%;
+        font-size: 100%;
     }
 
     .header
@@ -13,17 +13,13 @@
 
     .header_button_container
     {
-        top:9%;
+        top:11%;
         right: 3%;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.5);
         display: none;
         z-index: 1;
     }
 
-    .banner_title
-    {
-        font-size: 180%;
-    }
 
     .welcome_text_container
     {
@@ -37,9 +33,10 @@
         text-align: right;
         margin:3%;
         color:white;
-        background-color:black;
+        background-color:rgba(0, 0, 0, 0.1);
         font-size: 150%;
         padding:1%;
+        border-radius: 4%;
     }
 
     .header_button

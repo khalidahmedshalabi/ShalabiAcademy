@@ -8,6 +8,7 @@ body
 	margin:0;
     background: white;
     color: white;
+    text-align: center;
 }
 
 a
@@ -50,7 +51,7 @@ a
     color: #AAAAAA;
     font-size: 280%;
     padding: 1%;
-    border-radius: 3%;
+    border-radius: 50px;
     position: fixed;
     bottom: 3%;
     right: 3%;
@@ -59,21 +60,10 @@ a
 
 .header
 {
-    background: rgb(69,72,77);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDU0ODRkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(45deg,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: -o-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: -ms-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
-
+    background-color: transparent;
     width:100%;
     height:13%;
     margin: 0;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .sliding_header
@@ -88,15 +78,27 @@ a
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
 
-    width:100%;
-    height:auto;
-    margin: 0;
+    position: fixed;
+    top:23%;
+    width: 100%;
+    height:400px;
+    overflow: auto;
+    margin: auto;
     color:#333333;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     padding: 2%;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.sliding_header_close
+{
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    font-size: 300%;
+    cursor: pointer;
 }
 
 .contactus_icon
@@ -114,6 +116,28 @@ a
     top:1%;
     left: 4%;
     font-size: 115%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    margin: 1%;
+}
+
+.logo:hover
+{
+    animation-name: logo_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo_anim
+{
+    to
+    {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 }
 
 .logo_title
@@ -153,11 +177,12 @@ a
     cursor: pointer;
     padding-left:7px;
     padding-right:7px;
-    border-style: solid;
-    border-width: thin;
-    border-color: white;
-    border-bottom-width: medium;
-    border-left-width: medium;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: thin;
     border-radius: 5%;
 }
 
@@ -175,9 +200,9 @@ a
 {
     to
     {
-        background-color: white;
-        color: black;
-        padding-bottom: 2%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: transparent;
+        padding-bottom: 1%;
         font-weight: bolder;
     }
 }
@@ -244,42 +269,36 @@ a
     text-align: center;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    /*border-style: solid;
-    border-width: thin;
-    border-color: white;*/
     cursor: pointer;
     padding: 1%;
-    /*
-    color:white;
-    background: rgb(69,72,77);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDU0ODRkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(45deg,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: -o-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: -ms-linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    background: linear-gradient(45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );*/
     color:black;
     background: white;
     width:40%;
     margin: auto;
-    border-radius: 2%;
+    border-radius: 7px;
 }
 
 .StartLearningButton:hover
 {
     background: #EEEEEE;
-    /*color:black;
-    background: white;*/
 }
 
 .banner_title
 {
+    animation-name: banner_title_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
     font-family: 'Dosis', sans-serif;
     color:white;
     text-align:center;
-    font-size:230%;
+    font-weight: bolder;
+    font-size:250%;
+    margin-top:14%;
+    margin-bottom:3%;
 
     text-shadow:
         0 6px 1px rgba(0,0,0,.1),
@@ -297,7 +316,7 @@ a
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
-    height:85%;
+    height:100%;
 }
 
 .section_singlefeature
