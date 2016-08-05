@@ -117,7 +117,7 @@ a
     left: 4%;
     font-size: 115%;
     padding: 2%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 50px;
     margin: 1%;
 }
@@ -136,7 +136,7 @@ a
 {
     to
     {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.15);
     }
 }
 
