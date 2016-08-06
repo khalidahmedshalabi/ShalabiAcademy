@@ -20,11 +20,10 @@ $(window).scroll(function(event) {
 
 $(".scrolltotop").click(function(e)
 {
-	$(".section_welcome").css('height', '100%');
 	$("html, body").animate(
 	{
 		scrollTop: 0
-	});
+	}, 1000);
 });
 
 $(".logo").fadeIn(2000);
@@ -42,7 +41,7 @@ $(".StartLearningButton").hover(function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.7)");
 }, function() {
 	$(".section_welcome").animate({backgroundSize: "100%"}, {duration: 500, queue: false});
-	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
+	$(".section_welcome").css("box-shadow", "none");
 });
 
 $(".start_learning_coffee").css('display', 'none');
