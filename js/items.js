@@ -23,20 +23,19 @@ $(".item_year").hover(
             sound.volume = 0.2;
             sound.play();
 
-            $(this).find('img').animate({height: "70%"}, {duration: 300, queue: false});
+            $(this).find('img').stop().animate({height: "100%"}, {duration: 300, queue: false});
 
-            /*$(this).append('<p id="__temp"><br><br><br>Test</p>');
-            $("#__temp").css("font-size", "130%");
-            $("#__temp").css("text-align", "center");*/
+            $(this).find('p').css('display', 'none');
         }
     },
     function ()
     {
         if(SelectedYear == false)
         {
-            $(this).find('img').animate({height: "60%"}, {duration: 800, queue: false});
-
-            //$("#__temp").remove();
+            var dis = $(this);
+            dis.find('img').stop().animate({height: "60%"}, {duration: 800, queue: false, complete: function () {
+                dis.find('p').css('display', 'inline');
+            }});
         }
     }
 );
