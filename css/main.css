@@ -41,7 +41,7 @@ a
 {
     background-color: rgba(0, 0, 0, 0.7);
     color: #DDDDDD;
-    font-size: 280%;
+    font-size: 250%;
     padding: 1%;
     border-radius: 50px;
     position: fixed;
@@ -580,4 +580,58 @@ a
     background-size: 1px, 1px, auto, auto 20px;
     background-repeat: repeat-y, repeat-y, no-repeat, repeat;
     background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+}
+
+.footer
+{
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 10px 10px 15px 20px rgba(0, 0, 0, 0.2), 10px 10px 15px 20px rgba(0, 0, 0, 0.19);
+    background-color: black;
+}
+
+.inner_footer
+{
+    display: inline-block;
+    width:65%;
+    border-left-style: solid;
+    border-left-color: #333333;
+    border-left-width: thin;
+    border-right-style: solid;
+    border-right-color: #333333;
+    border-right-width: thin;
+    color: #CCCCCC;
+}
+
+.footer_logo
+{
+    font-size: 200%;
+    cursor: pointer;
+    text-align: center;
+    margin: 3%;
+    color: white;
+}
+
+.footer_content_box
+{
+    float: left;
+    font-size: 70%;
+    text-align: left;
+    margin: 3%;
+    margin-top: 10%;
+    border-left-style: solid;
+    border-left-color: #333333;
+    border-left-width: thin;
+    padding-left: 3%;
+}
+
+.footer_links
+{
+    display: block;
+    margin-top: 10%;
+}
+
+.copyright
+{
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
