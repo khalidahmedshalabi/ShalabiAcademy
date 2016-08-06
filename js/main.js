@@ -20,6 +20,7 @@ $(window).scroll(function(event) {
 
 $(".scrolltotop").click(function(e)
 {
+	$(".section_welcome").css('height', '100%');
 	$("html, body").animate(
 	{
 		scrollTop: 0

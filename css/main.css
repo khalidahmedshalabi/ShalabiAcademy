@@ -9,20 +9,12 @@ body
     background: white;
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 
 a
 {
     color: inherit;
-}
-
-.blurry
-{
-	-webkit-filter: blur(1px);
-	-moz-filter: blur(1px);
-	-o-filter: blur(1px);
-	-ms-filter: blur(1px);
-	filter: blur(1px);
 }
 
 .arkufi
@@ -200,7 +192,6 @@ a
 {
     to
     {
-        padding-left: 3%;
         background-color: rgba(255, 255, 255, 0.1);
         border-color: transparent;
         padding-bottom: 1%;
