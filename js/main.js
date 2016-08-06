@@ -37,6 +37,14 @@ $(".StartLearningButton").click(function(e)
 	});
 });
 
+$(".StartLearningButton").hover(function() {
+	$(".section_welcome").animate({backgroundSize: "105%"}, {duration: 500, queue: false});
+	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.7)");
+}, function() {
+	$(".section_welcome").animate({backgroundSize: "100%"}, {duration: 500, queue: false});
+	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
+});
+
 $(".start_learning_coffee").css('display', 'none');
 setInterval(function () {
 	$(".start_learning_coffee").fadeOut(1000, function() {
