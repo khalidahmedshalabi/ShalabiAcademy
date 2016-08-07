@@ -305,7 +305,7 @@ a
 .section_welcome
 {
     background-image: url('../img/section_welcome_cover.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width:100%;
     height:100%;
