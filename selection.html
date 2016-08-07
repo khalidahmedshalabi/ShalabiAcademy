@@ -28,217 +28,228 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	</head>
 
-	<body>
-		<inline class="gobackhomepage">
-			<i class="fa fa-arrow-circle-left" style="display:inline; margin: 5%;"></i> Homepage
-		</inline>
 
-		<p style="font-family: 'Dosis', sans-serif; font-weight:bolder; color:#BBBBBB; text-align:center; font-size:270%; margin-top:3%;">Select subject</p>
+
+	<body>
+		<div class="menu">
+			<i class="fa fa-close close_menu_button"></i>
+
+			<br>
+			<a class="menu_item" href="index.html" target="_self">Homepage</a>
+			<a class="menu_item" href="https://drive.google.com/open?id=0B7_UskQ4D8--TXhfNkg2TlVlMW8" target="_blank">Download PDF</a>
+			<a class="menu_item" href="https://www.youtube.com/channel/UCh7-v9guk5JZw8H8-1BJH0A" target="_blank">YouTube channel</a>
+			<a class="menu_item" href="testyourself.html" target="_self">Test yourself</a>
+			<a class="menu_item" href="" target="_self">Send feedback</a>
+		</div>
+
+		<i class="fa fa-bars menu_button"></i>
+
+		<p style="font-family: 'Dosis', sans-serif; font-weight:bolder; color:#555555; text-align:center; font-size:270%; margin-top:3%;">Select subject</p>
 
 		<section class="subjects_container">
 			<div class="subjects">
 				<div class="subject_title">Hello</div>
 
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit1')">Unit 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit2')">Unit 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit3')">Unit 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewa')">Review A</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit4')">Unit 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit5')">Unit 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit6')">Unit 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewb')">Review B</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit7')">Unit 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit8')">Unit 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit9')">Unit 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewc')">Review C</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit10')">Unit 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit11')">Unit 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit12')">Unit 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewd')">Review D</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit13')">Unit 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit14')">Unit 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit15')">Unit 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewe')">Review E</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit16')">Unit 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit17')">Unit 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/unit18')">Unit 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/hello/reviewf">Review F</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit1')">Unit 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit2')">Unit 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit3')">Unit 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewa')">Review A</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit4')">Unit 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit5')">Unit 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit6')">Unit 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewb')">Review B</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit7')">Unit 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit8')">Unit 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit9')">Unit 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewc')">Review C</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit10')">Unit 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit11')">Unit 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit12')">Unit 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewd')">Review D</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit13')">Unit 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit14')">Unit 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit15')">Unit 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewe')">Review E</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit16')">Unit 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit17')">Unit 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/unit18')">Unit 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/hello/reviewf">Review F</a>
 			</div>
 
 			<div class="subjects">
 				<div class="subject_title">Novel</div>
 
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter1')">Chapter 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter2')">Chapter 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter3')">Chapter 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter4')">Chapter 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter5')">Chapter 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter6')">Chapter 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter7')">Chapter 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/novel/chapter8')">Chapter 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter1')">Chapter 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter2')">Chapter 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter3')">Chapter 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter4')">Chapter 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter5')">Chapter 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter6')">Chapter 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter7')">Chapter 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/novel/chapter8')">Chapter 8</a>
 			</div>
 
 			<div class="subjects">
 				<div class="subject_title">Language skills</div>
 
 				<div class="subject_subtitle">Writing</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/writing/level20')">Level 20</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/writing/level20')">Level 20</a>
 
 				<div class="subject_subtitle">Comprehension</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/comprehension/level20')">Level 20</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/comprehension/level20')">Level 20</a>
 
 
 				<div class="subject_subtitle">Situations</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/situations/level20')">Level 20</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/situations/level20')">Level 20</a>
 
 
 				<div class="subject_subtitle">Speakers</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/speakers/level20')">Level 20</a>
-
-
-				<div class="subject_subtitle">Translation into Arabic</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatear/level20')">Level 20</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/speakers/level20')">Level 20</a>
 
 
 				<div class="subject_subtitle">Translation into English</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translateen/level20')">Level 20</a>
+				<a class="subject_element subject_available" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatear/level20')">Level 20</a>
+
+
+				<div class="subject_subtitle">Translation into Arabic</div>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translateen/level20')">Level 20</a>
 
 
 				<div class="subject_subtitle">Translation: Dictionary</div>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level1')">Level 1</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level2')">Level 2</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level3')">Level 3</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level4')">Level 4</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level5')">Level 5</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level6')">Level 6</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level7')">Level 7</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level8')">Level 8</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level9')">Level 9</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level10')">Level 10</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level11')">Level 11</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level12')">Level 12</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level13')">Level 13</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level14')">Level 14</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level15')">Level 15</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level16')">Level 16</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level17')">Level 17</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level18')">Level 18</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level19')">Level 19</a>
-				<a class="subject_element" onclick="LoadLesson('sheet/year1/skills/translatedict/level20')">Level 20</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level1')">Level 1</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level2')">Level 2</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level3')">Level 3</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level4')">Level 4</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level5')">Level 5</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level6')">Level 6</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level7')">Level 7</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level8')">Level 8</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level9')">Level 9</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level10')">Level 10</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level11')">Level 11</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level12')">Level 12</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level13')">Level 13</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level14')">Level 14</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level15')">Level 15</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level16')">Level 16</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level17')">Level 17</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level18')">Level 18</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level19')">Level 19</a>
+				<a class="subject_element subject_unavailable" onclick="LoadLesson(this, 'sheet/year3/skills/translatedict/level20')">Level 20</a>
 
 			</div>
 		</section>
@@ -255,14 +266,10 @@
 				</tr>
 				<tr>
 					<td class="video_loader">
-						<iframe class="show_video" src="https://www.youtube.com/embed/l4FnaeJzjSI" frameborder="0" allowfullscreen></iframe>
-						<br>
-						<iframe class="show_video" src="https://www.youtube.com/embed/l4FnaeJzjSI" frameborder="0" allowfullscreen></iframe>
-						<br>
-						<iframe class="show_video" src="https://www.youtube.com/embed/l4FnaeJzjSI" frameborder="0" allowfullscreen></iframe>
+
 					</td>
 					<td class="paper_loader">
-						<iframe class="show_paper" src="https://drive.google.com/file/d/0B2VWFdGRpzdNUVlyLVpFZEZEc1E/preview" frameborder="0"></iframe>
+
 					</td>
 				</tr>
 			</table>
