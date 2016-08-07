@@ -1,5 +1,5 @@
 
-$(".subject_element").click(function(event) {
+$(".subject_element").not(".sample_subject").click(function(event) {
     $(".subject_element").not(this).not(".subject_unavailable").css('border-color', '#DDDDDD');
     $(".subject_element").not(this).not(".subject_unavailable").css('background-color', '#DDDDDD');
     $(".subject_element").not(this).not(".subject_unavailable").css('font-weight', 'normal');

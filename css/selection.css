@@ -81,6 +81,12 @@ a
     display: block;
 }
 
+.instructions
+{
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+}
+
 .subject_container
 {
     width:100%;
@@ -134,6 +140,13 @@ a
     border-radius: 6%;
 }
 
+.subject_sample
+{
+    padding: 5px;
+    display: inline-block;
+}
+
+
 .subject_available
 {
     background-color: rgba(2, 158, 2, 0.3);
@@ -166,7 +179,6 @@ a
     background-color: rgba(255, 0, 0, 0.3);
     color: rgba(255, 0, 0, 0.7);
     border-color: rgba(255, 0, 0, 0.7);
-    text-decoration: line-through;
     cursor: not-allowed;
 }
 
