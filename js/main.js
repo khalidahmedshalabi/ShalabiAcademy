@@ -64,7 +64,7 @@ function ChangeBannerTitle()
         }
         case 1:
         {
-            $(".banner_title").html("Your way to success in Thanawia Amma");
+            $(".banner_title").html("Your way to success in Thanawya Amma");
             break;
         }
         case 2:
@@ -74,7 +74,7 @@ function ChangeBannerTitle()
         }
         case 3:
         {
-            $(".banner_title").html("Innovative methods to master Thanawia Amma");
+            $(".banner_title").html("Innovative methods to master Thanawya Amma");
             break;
         }
 		case 4:
