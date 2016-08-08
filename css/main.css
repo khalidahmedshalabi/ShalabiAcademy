@@ -455,6 +455,11 @@ a
     width: 100%;
 }
 
+.disabled_year_item
+{
+    cursor: not-allowed;
+}
+
 .item_year
 {
     float: left;

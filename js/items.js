@@ -40,7 +40,7 @@ $(".item_year").hover(
     }
 );
 
-$(".item_year").click(
+$(".item_year").not(".disabled_year_item").click(
 
     function ()
     {
