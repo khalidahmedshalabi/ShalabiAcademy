@@ -336,6 +336,23 @@ a
     font-family: 'Open Sans', sans-serif;
 }
 
+.section_features_icon
+{
+    margin-right:2%;
+    font-size:140%;
+}
+
+.section_features_links
+{
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #EEEEEE;
+    margin-left: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .section_socialmedia
 {
     background-color: #eeeeee;
