@@ -57,27 +57,37 @@ function ChangeBannerTitle()
     {
         case 0:
         {
-            $(".banner_title").html("An online school is definitely easier to access");
-            break;
-        }
-        case 1:
-        {
-            $(".banner_title").html("Your way to success in Thanawya Amma");
-            break;
-        }
-        case 2:
-        {
             $(".banner_title").html("Learning has never been easier");
             break;
         }
-        case 3:
+		case 1:
         {
-            $(".banner_title").html("Innovative methods to master Thanawya Amma");
+            $(".banner_title").html("Videos, notes, mind maps and online testing");
             break;
         }
-		case 4:
+		case 2:
         {
-            $(".banner_title").html("Qualifiied yet free education and always will be");
+            $(".banner_title").html("Tests with model answers");
+            break;
+        }
+		case 3:
+        {
+            $(".banner_title").html("Writing, translation, situations, speakers and comprehension");
+            break;
+        }
+        case 4:
+        {
+            $(".banner_title").html("Your way to master English in Thanawya Amma");
+            break;
+        }
+        case 5:
+        {
+            $(".banner_title").html("Innovative methods of teaching");
+            break;
+        }
+		case 6:
+        {
+            $(".banner_title").html("Finest quality yet free and always will be");
 			banner_title_ct = -1;
             break;
         }
