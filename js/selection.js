@@ -1,5 +1,5 @@
 
-$(".subject_element").not(".subject_sample").click(function(event) {
+$(".subject_element").not(".subject_sample").not(".subject_unavailable").click(function(event) {
     $(".subject_element").not(this).not(".subject_unavailable").css('border-color', 'rgba(2, 158, 2, 0.7)');
     $(".subject_element").not(this).not(".subject_unavailable").css('background-color', 'rgba(2, 158, 2, 0.3)');
     $(".subject_element").not(this).not(".subject_unavailable").css('font-weight', 'rgba(2, 158, 2, 0.9)');
