@@ -33,6 +33,7 @@ a
 
 .menu_item
 {
+    text-align: center;
     text-decoration: none;
     display: block;
     border-bottom-style:solid;
