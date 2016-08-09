@@ -12,7 +12,7 @@ $(window).resize(function()
 
 var SelectedYear = false;
 
-$(".item_year").hover(
+$(".item_year").not(".disabled_year_item").hover(
 
     function ()
     {
@@ -57,3 +57,7 @@ $(".item_year").not(".disabled_year_item").click(
         }});
     }
 );
+
+$(".disabled_year_item").click(function() {
+	alert("This year is not prepared yet.");
+});
