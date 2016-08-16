@@ -36,10 +36,12 @@ $(".StartLearningButton").click(function(e)
 	});
 });
 
+$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
+
 $(".StartLearningButton").hover(function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.7)");
 }, function() {
-	$(".section_welcome").css("box-shadow", "none");
+	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
 });
 
 $(".start_learning_coffee").css('display', 'none');
