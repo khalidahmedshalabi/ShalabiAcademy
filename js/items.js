@@ -65,3 +65,9 @@ $(".disabled_year_item").hover(function(e) {
 }, function() {
     $(".disabled_year_item_errorbox").hide();
 });
+
+$(".disabled_year_item").click(function(e) {
+    $(".disabled_year_item_errorbox").css('left', e.pageX);
+    $(".disabled_year_item_errorbox").css('top', e.pageY);
+    $(".disabled_year_item_errorbox").show();
+});
