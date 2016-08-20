@@ -58,6 +58,10 @@ $(".item_year").not(".disabled_year_item").click(
     }
 );
 
-$(".disabled_year_item").click(function() {
-	alert("This year is not prepared yet.");
+$(".disabled_year_item").hover(function(e) {
+    $(".disabled_year_item_errorbox").css('left', e.pageX);
+    $(".disabled_year_item_errorbox").css('top', e.pageY);
+    $(".disabled_year_item_errorbox").show();
+}, function() {
+    $(".disabled_year_item_errorbox").hide();
 });

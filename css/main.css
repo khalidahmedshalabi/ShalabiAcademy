@@ -416,11 +416,25 @@ a
     justify-content: center;
     color: black;
     width: 100%;
+    margin-bottom: 7%;
 }
 
 .disabled_year_item
 {
     cursor: not-allowed;
+}
+
+.disabled_year_item_errorbox
+{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 122, 122, 0.9);
+    color: #A60C0C;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bolder;
+    z-index: 1;
 }
 
 .item_year
