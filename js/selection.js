@@ -65,3 +65,5 @@ $(".close_menu_button").click(function(event) {
         $(".menu").fadeOut('500');
     }
 });
+
+LoadLesson(0, 'sheet/year3/hello/unit1');
