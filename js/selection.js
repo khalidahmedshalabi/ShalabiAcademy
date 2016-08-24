@@ -66,4 +66,22 @@ $(".close_menu_button").click(function(event) {
     }
 });
 
+function AvailableSubjectsCheckbox()
+{
+    if($(".subjects_checkbox").is(':checked'))
+    {
+        $(".subject_unavailable").not(".subject_sample").fadeOut(500);
+    }
+    else
+    {
+        $(".subject_unavailable").not(".subject_sample").fadeIn(500);
+    }
+}
+
+AvailableSubjectsCheckbox();
+
+$(".subjects_checkbox").click(function(event) {
+    AvailableSubjectsCheckbox();
+});
+
 LoadLesson(0, 'sheet/year3/hello/unit1');

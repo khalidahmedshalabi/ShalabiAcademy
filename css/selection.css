@@ -30,7 +30,7 @@ a
 .scrolltotop:hover
 {
     background-color: #777777;
-    font-size: 230%;
+    font-weight: bolder;
 }
 
 .menu
@@ -104,6 +104,7 @@ a
 {
     text-align: right;
     font-family: 'Dosis', sans-serif;
+    margin-right: 3%;
 }
 
 .subject_container
