@@ -224,15 +224,21 @@ a
 
 .show_container
 {
-    width: 100%;
+    width: auto;
+}
+
+.classroom_shower
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    width:50%;
 }
 
 .show_paper
 {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    border-style: none;
     width:100%;
     height:1050px;
 }
@@ -240,12 +246,16 @@ a
 .show_video
 {
     display: block;
+    width:100%;
+    height:350px;
+}
+
+.show_loader
+{
     border: 0;
     padding: 0;
     margin: 0;
     border-style: none;
-    width:100%;
-    height:350px;
 }
 
 .loader_error

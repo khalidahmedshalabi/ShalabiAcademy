@@ -24,7 +24,7 @@
         display: none;
         z-index: 1;
     }
-    
+
     .welcome_text_container
     {
         width: 60%;
@@ -88,5 +88,16 @@
     .menu
     {
         padding: 4%;
+    }
+
+    .classroom_shower
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .show_paper
+    {
+        width:85%;
     }
 }
