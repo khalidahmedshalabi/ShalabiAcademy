@@ -23,7 +23,7 @@ $(".scrolltotop").click(function(e)
 	$("html, body").animate(
 	{
 		scrollTop: 0
-	}, 1000);
+	}, 1500);
 });
 
 $(".logo").fadeIn(2000);
@@ -33,7 +33,7 @@ $(".StartLearningButton").click(function(e)
 	$("html, body").animate(
 	{
 		scrollTop: $(".section_learning").offset().top
-	});
+	}, 1500);
 });
 
 $(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
