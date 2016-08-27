@@ -40,8 +40,10 @@ $(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
 
 $(".StartLearningButton").hover(function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.7)");
+	$(".banner_title").css('background-color', 'rgba(255, 255, 255, 0.3)');
 }, function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
+	$(".banner_title").css('background-color', 'rgba(0, 0, 0, 0.2)');
 });
 
 $(".start_learning_coffee").css('display', 'none');
@@ -59,37 +61,37 @@ function ChangeBannerTitle()
     {
         case 0:
         {
-            $(".banner_title").html("Learning has never been easier");
+            $(".banner_title").html("الجيل الجديد من التعليم");
             break;
         }
 		case 1:
         {
-            $(".banner_title").html("Videos, notes, mind maps and online testing");
+            $(".banner_title").html("شرح و مذكرات و خرائط ذهنية و اختبارات");
             break;
         }
 		case 2:
         {
-            $(".banner_title").html("Tests with model answers");
+            $(".banner_title").html("اختبر نفسك اونلاين و احصل على تقييم فورياً");
             break;
         }
 		case 3:
         {
-            $(".banner_title").html("Writing, translation, situations, speakers and comprehension");
+            $(".banner_title").html("الكورس يشمل كل شىء من قواعد اللغة الى كل المهارات اللغوية");
             break;
         }
         case 4:
         {
-            $(".banner_title").html("Your way to master English in Thanawya Amma");
+            $(".banner_title").html("الطريق للتفوق فى الثانوية العامة");
             break;
         }
         case 5:
         {
-            $(".banner_title").html("Innovative methods of teaching");
+            $(".banner_title").html("طرق مُبتكرة للتعليم باستخدام التكنولوجيا");
             break;
         }
 		case 6:
         {
-            $(".banner_title").html("Finest quality yet free and always will be");
+            $(".banner_title").html("جودة ممتازة بدون اى تكاليف");
 			banner_title_ct = -1;
             break;
         }
