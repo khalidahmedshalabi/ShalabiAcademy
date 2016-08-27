@@ -57,15 +57,23 @@ $(".menu_button, .menu").hover(function(event) {
         $(".menu").animate({left: "3%"}, {duration: 300, queue: false});
         $(".menu").fadeIn('500');
     }
+}, function (event) {
+
+});
+
+$(".menu").hover(function(event) {
+
 },
     function (event)
     {
-        if(MenuShown == true && !$(".menu").is(':hover'))
-        {
-            $(".menu").fadeOut('500', function (){
-                MenuShown = false;
-            });
-        }
+        setTimeout(function () {
+            if(MenuShown == true && !$(".menu").is(':hover'))
+            {
+                $(".menu").fadeOut('500', function (){
+                    MenuShown = false;
+                });
+            }
+        }, 200);
     }
 );
 
