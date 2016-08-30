@@ -59,7 +59,7 @@ a
 {
     text-align: right;
     direction: rtl;
-    min-width: 20%;
+    min-width: 35%;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -125,7 +125,9 @@ a
 {
     color: #333333;
     font-size: 200%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+    margin-right: 5%;
     cursor: pointer;
     text-align: right;
     display: inline-block;
