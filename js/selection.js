@@ -53,7 +53,6 @@ $(".menu_button").click(function(event) {
     if(MenuShown == false)
     {
         MenuShown = true;
-        $('html, body').css('overflow', 'hidden');
         $(".menu").show();
         $(".actual_menu").css('left', '-3%');
         $(".actual_menu").animate({left: "0%"}, {duration: 300, queue: false});
@@ -68,7 +67,6 @@ $(".close_menu_button").click(function(event) {
         $(".actual_menu").fadeOut('500', function (){
             MenuShown = false;
             $(".menu").hide();
-            $('html, body').css('overflow', 'auto');
         });
     }
 });
@@ -80,7 +78,6 @@ $(".menu_space").click(function(event) {
         $(".actual_menu").fadeOut('500', function (){
             MenuShown = false;
             $(".menu").hide();
-            $('html, body').css('overflow', 'auto');
         });
     }
 });
