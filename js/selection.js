@@ -47,39 +47,40 @@ $(document).scroll(function(event) {
     }
 });
 
-var MenuShown = false, MenuFullyShown = false;
+var MenuShown = false;
 
 $(".menu_button").click(function(event) {
     if(MenuShown == false)
     {
         MenuShown = true;
-        MenuFullyShown = false;
-        $(".menu").css('left', '-3%');
-        $(".menu").animate({left: "0%"}, {duration: 300, queue: false});
-        $(".menu").fadeIn('500', function () {
-            MenuFullyShown = true;
-        });
-    }
-});
-
-$(".menu").hover(function() {
-    //  na
-}, function() {
-    if(MenuShown == true && MenuFullyShown == true)
-    {
-        $(".menu").animate({left: "-3%"}, {duration: 300, queue: false});
-        $(".menu").fadeOut('500', function (){
-            MenuShown = false;
-        });
+        $('html, body').css('overflow', 'hidden');
+        $(".menu").show();
+        $(".actual_menu").css('left', '-3%');
+        $(".actual_menu").animate({left: "0%"}, {duration: 300, queue: false});
+        $(".actual_menu").fadeIn('500');
     }
 });
 
 $(".close_menu_button").click(function(event) {
     if(MenuShown == true)
     {
-        $(".menu").animate({left: "-3%"}, {duration: 300, queue: false});
-        $(".menu").fadeOut('500', function (){
+        $(".actual_menu").animate({left: "-3%"}, {duration: 300, queue: false});
+        $(".actual_menu").fadeOut('500', function (){
             MenuShown = false;
+            $(".menu").hide();
+            $('html, body').css('overflow', 'auto');
+        });
+    }
+});
+
+$(".menu_space").click(function(event) {
+    if(MenuShown == true)
+    {
+        $(".actual_menu").animate({left: "-3%"}, {duration: 300, queue: false});
+        $(".actual_menu").fadeOut('500', function (){
+            MenuShown = false;
+            $(".menu").hide();
+            $('html, body').css('overflow', 'auto');
         });
     }
 });
