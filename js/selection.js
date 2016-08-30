@@ -47,40 +47,39 @@ $(document).scroll(function(event) {
     }
 });
 
-var MenuShown = false;
+var MenuShown = false, MenuFullyShown = false;
 
-$(".menu_button, .menu").hover(function(event) {
+$(".menu_button").click(function(event) {
     if(MenuShown == false)
     {
         MenuShown = true;
+        MenuFullyShown = false;
         $(".menu").css('left', '-3%');
-        $(".menu").animate({left: "3%"}, {duration: 300, queue: false});
-        $(".menu").fadeIn('500');
+        $(".menu").animate({left: "0%"}, {duration: 300, queue: false});
+        $(".menu").fadeIn('500', function () {
+            MenuFullyShown = true;
+        });
     }
-}, function (event) {
-
 });
 
-$(".menu").hover(function(event) {
-
-},
-    function (event)
+$(".menu").hover(function() {
+    //  na
+}, function() {
+    if(MenuShown == true && MenuFullyShown == true)
     {
-        setTimeout(function () {
-            if(MenuShown == true && !$(".menu").is(':hover'))
-            {
-                $(".menu").fadeOut('500', function (){
-                    MenuShown = false;
-                });
-            }
-        }, 200);
+        $(".menu").animate({left: "-3%"}, {duration: 300, queue: false});
+        $(".menu").fadeOut('500', function (){
+            MenuShown = false;
+        });
     }
-);
+});
 
 $(".close_menu_button").click(function(event) {
     if(MenuShown == true)
     {
-        MenuShown = false;
-        $(".menu").fadeOut('500');
+        $(".menu").animate({left: "-3%"}, {duration: 300, queue: false});
+        $(".menu").fadeOut('500', function (){
+            MenuShown = false;
+        });
     }
 });

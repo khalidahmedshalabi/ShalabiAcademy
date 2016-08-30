@@ -45,22 +45,24 @@ a
 .menu
 {
     direction: rtl;
-    min-width: 10%;
+    min-width: 20%;
     position: fixed;
-    top: 3%;
-    left: 3%;
+    top: 0%;
+    left: 0%;
+    height: 100%;
     background-color: #EEEEEE;
     padding: 1%;
-    -webkit-box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
-    -moz-box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
-    box-shadow: 3px 8px 37px -2px rgba(0,0,0,0.73);
     border-radius: 3px;
     display: none;
+    z-index: 1;
+    -webkit-box-shadow: 8px 0px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 0px 24px 1px rgba(0,0,0,0.75);
+    box-shadow: 8px 0px 24px 1px rgba(0,0,0,0.75);
 }
 
 .menu_item
 {
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     display: block;
     border-bottom-style:solid;
@@ -102,6 +104,7 @@ a
 {
     color: #333333;
     font-size: 200%;
+    margin-bottom: 20%;
     cursor: pointer;
     text-align: right;
     display: inline-block;
@@ -109,6 +112,7 @@ a
 
 .menu_button_container
 {
+    z-index: 0;
     margin-bottom: 3%;
     width: 100%;
 }
@@ -223,6 +227,8 @@ a
     color: #555555;
     font-weight:bolder;
     font-size: 270%;
+    margin-top: 25%;
+    margin-bottom: 5%;
 }
 
 .section_show_subtitle
