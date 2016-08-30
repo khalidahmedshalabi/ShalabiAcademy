@@ -56,4 +56,4 @@ $(".subjects_checkbox").click(function(event) {
     AvailableSubjectsCheckbox();
 });
 
-LoadLesson(0, 'sheet/year3/hello/unit1');
+LoadLesson(0, 'sheet/year3/novel/chapter1');
