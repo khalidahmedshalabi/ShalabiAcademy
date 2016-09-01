@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<widget version = "1.0">
+
+   <name>Shalabi Academy: ثانوية عامة</name>
+
+   <description>
+      تطبيق يقدم شرح كامل و مذكرات فى مادة اللغة الانجليزية للثانوية العامة - مجاناً بدون اى مُقابل - ذاكر و انت قاعد فى بيتك من غير بهدلة فى الدروس الخصوصية و المواصلات. احسبها صح و وفر فلوسك
+   </description>
+
+   <author href = "http://shalabiacademy.com" email = "mail@shalabiacademy.com">
+      Shalabi Academy
+   </author>
+
+   <preference name = "permissions" value = "none"/>
+
+   <content src="selection.html"/>
+
+   <icon src = "res/icon/android/drawable-ldpi/tp_icon.png"
+      gap:platform = "android" gap:qualifier = "ldpi" />
+
+   <icon src = "res/icon/android/drawable-mdpi/tp_icon.png"
+      gap:platform = "android" gap:qualifier = "mdpi" />
+
+   <icon src = "res/icon/android/drawable-hdpi/tp_icon.png"
+      gap:platform = "android" gap:qualifier = "hdpi" />
+
+   <icon src = "res/icon/android/drawable-xhdpi/tp_icon.png"
+      gap:platform = "android" gap:qualifier = "xhdpi" />
+
+   <icon src = "res/icon/android/drawable-xxhdpi/tp_icon.png"
+      gap:platform = "android" gap:qualifier = "xxhdpi" />
+
+   <icon src = "res/icon/ios/Icon-72.png" gap:platform = "ios" gap:qualifier = ""/>
+   <icon src = "res/icon/ios/icon-57.png" gap:platform = "ios" width = "57" height = "57" />
+   <icon src = "res/icon/ios/icon-72.png" gap:platform = "ios" width = "72" height = "72" />
+   <icon src = "res/icon/ios/icon-57-2x.png" gap:platform = "ios" width = "114" height = "114" />
+   <icon src = "res/icon/ios/icon-72-2x.png" gap:platform = "ios" width = "144" height = "144" />
+
+</widget>
