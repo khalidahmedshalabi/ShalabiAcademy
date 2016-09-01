@@ -64,6 +64,7 @@ a
     top: 0%;
     left: 0%;
     height: 100%;
+    overflow: auto;
     background-color: #EEEEEE;
     padding: 1%;
     border-radius: 3px;
@@ -89,7 +90,7 @@ a
     border-bottom-color: #CCCCCC;
     margin-bottom: 15%;
     border-radius: 2px;
-    padding: 3%;
+    padding: 2%;
 }
 
 .menu_item:hover
@@ -106,8 +107,8 @@ a
 {
     to
     {
-        background-color: black;
-        color: white;
+        background-color: #CCCCCC;
+        color: #444444;
         border-bottom-width: thick;
         border-bottom-color: #555555;
     }

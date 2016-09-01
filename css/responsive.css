@@ -85,9 +85,15 @@
         margin-bottom: 10%;
     }
 
-    .menu
+    .actual_menu
     {
-        padding: 4%;
+        padding: 2%;
+        min-width: 85%;
+    }
+
+    .menu_item
+    {
+        margin-right: 3%;
     }
 
     .classroom_shower
