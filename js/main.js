@@ -110,7 +110,7 @@ $(".banner_title").ready(function () {
 });
 
 $(".moving_section").hover(function() {
-	$(this).animate({fontSize: "+=3%"}, {duration: 500, queue: false});
+	$(this).velocity({fontSize: "+=3%"}, {duration: 500, queue: false});
 }, function() {
-	$(this).animate({fontSize: "100%"}, {duration: 500, queue: false});
+	$(this).velocity({fontSize: "100%"}, {duration: 500, queue: false});
 });

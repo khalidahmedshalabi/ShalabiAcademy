@@ -8,7 +8,7 @@ $(".subject_element").not(".subject_sample").not(".subject_unavailable").click(f
 
     $("html, body").animate(
 	{
-		scrollTop: $(".section_show").offset().top
+		scrollTop: $(".section_show").offset().top - $(".menu_button_container").height()
 	});
 });
 
