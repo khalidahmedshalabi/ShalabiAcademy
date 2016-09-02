@@ -16,8 +16,8 @@ function MenuButtonContainerDefault()
 {
     $(".menu_button_container").velocity('finish', true);
     $(".menu_button_container").css('position', 'static');
-    $(".menu_button_container").css('background-color', '#333333');
-    $(".menu_button_container").css('color', '#DDDDDD');
+    $(".menu_button_container").css('background-color', '#EEEEEE');
+    $(".menu_button_container").css('color', '#333333');
     $(".menu_button_container").css('font-size', '350%');
     $(".menu_button_container").css("box-shadow", "none");
 }
@@ -35,7 +35,7 @@ $(document).scroll(function(event) {
             $(".menu_button_container").css('color', '#333333');
             $(".menu_button_container").css('position', 'fixed');
             $(".menu_button_container").css('top', '-5%');
-            $(".menu_button_container").velocity({top: "0%", fontSize:"300%"}, {duration: 700, queue: false});
+            $(".menu_button_container").velocity({top: "0%", fontSize:"350%"}, {duration: 700, queue: false});
             $(".menu_button_container").fadeIn('500');
             $(".menu_button_container").css("box-shadow", "0px 9px 20px -10px rgba(0,0,0,0.75)");
         }
