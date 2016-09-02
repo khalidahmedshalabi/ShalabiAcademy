@@ -116,7 +116,6 @@ a
 
 .menu_button
 {
-    color: #333333;
     cursor: pointer;
     margin: 1%;
     margin-left: 5%;
@@ -136,6 +135,7 @@ a
 
 .menu_button_container
 {
+    color: #333333;
     z-index: 0;
     margin-bottom: 3%;
     width: 100%;

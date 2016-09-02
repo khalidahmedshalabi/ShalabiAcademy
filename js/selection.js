@@ -8,8 +8,16 @@ $(".scrolltotop").click(function(e)
 
 var MenuButtonContainer = false;
 
-$(".menu_button_container").css('background-color', 'rgba(0, 0, 0, 0.08)');
-$(".menu_button_container").css('font-size', '400%');
+function MenuButtonContainerDefault()
+{
+    $(".menu_button_container").css('position', 'static');
+    $(".menu_button_container").css('background-color', '#333333');
+    $(".menu_button_container").css('color', '#DDDDDD');
+    $(".menu_button_container").css('font-size', '350%');
+    $(".menu_button_container").css("box-shadow", "none");
+}
+
+MenuButtonContainerDefault();
 
 $(document).scroll(function(event) {
     if($(document).scrollTop() > $(".menu_button_container").height())
@@ -18,7 +26,8 @@ $(document).scroll(function(event) {
         {
             MenuButtonContainer = true;
             $(".menu_button_container").css('display', 'none');
-            $(".menu_button_container").css('background-color', '#ffffff');
+            $(".menu_button_container").css('background-color', 'rgba(255, 255, 255, 0.9)');
+            $(".menu_button_container").css('color', '#333333');
             $(".menu_button_container").css('position', 'fixed');
             $(".menu_button_container").css('top', '-5%');
             $(".menu_button_container").velocity({top: "0%", fontSize:"300%"}, {duration: 700, queue: false});
@@ -31,10 +40,7 @@ $(document).scroll(function(event) {
         if(MenuButtonContainer == true)
         {
             MenuButtonContainer = false;
-            $(".menu_button_container").css('position', 'static');
-            $(".menu_button_container").css('background-color', 'rgba(0, 0, 0, 0.08)');
-            $(".menu_button_container").css('font-size', '400%');
-            $(".menu_button_container").css("box-shadow", "none");
+            MenuButtonContainerDefault();
         }
     }
 });
