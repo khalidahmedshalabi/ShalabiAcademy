@@ -10,6 +10,7 @@ var MenuButtonContainer = false;
 
 function MenuButtonContainerDefault()
 {
+    $(".menu_button_container").velocity('finish', true);
     $(".menu_button_container").css('position', 'static');
     $(".menu_button_container").css('background-color', '#333333');
     $(".menu_button_container").css('color', '#DDDDDD');
