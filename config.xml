@@ -38,7 +38,7 @@
     <icon src = "res/icon/ios/icon76x2.png"  gap:platform = "ios" width = "152" height = "152" />
 
 
-    <access origin="http://shalabiacademy.com" subdomains="true" />
+    <access origin="*"/>
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
