@@ -3,38 +3,48 @@
 <widget  xmlns = "http://www.w3.org/ns/widgets"
    xmlns:gap = "http://phonegap.com/ns/1.0"  version = "1.0">
 
-   <name>Shalabi Academy: ثانوية عامة</name>
+    <name>Shalabi Academy: ثانوية عامة</name>
 
-   <description>
+    <description>
       تطبيق يقدم شرح كامل و مذكرات فى مادة اللغة الانجليزية للثانوية العامة - مجاناً بدون اى مُقابل - ذاكر و انت قاعد فى بيتك من غير بهدلة فى الدروس الخصوصية و المواصلات. احسبها صح و وفر فلوسك
-   </description>
+    </description>
 
-   <author href = "http://shalabiacademy.com" email = "mail@shalabiacademy.com">
+    <author href = "http://shalabiacademy.com" email = "mail@shalabiacademy.com">
       Shalabi Academy
-   </author>
+    </author>
 
-   <preference name = "permissions" value = "none"/>
+    <preference name = "permissions" value = "none"/>
 
-   <content src="selection.html"/>
+    <content src="selection.html"/>
 
-   <icon src = "res/icon/android/drawable-ldpi/tp_icon.png"
+    <icon src = "res/icon/android/drawable-ldpi/tp_icon.png"
       gap:platform = "android" gap:qualifier = "ldpi" />
 
-   <icon src = "res/icon/android/drawable-mdpi/tp_icon.png"
+    <icon src = "res/icon/android/drawable-mdpi/tp_icon.png"
       gap:platform = "android" gap:qualifier = "mdpi" />
 
-   <icon src = "res/icon/android/drawable-hdpi/tp_icon.png"
+    <icon src = "res/icon/android/drawable-hdpi/tp_icon.png"
       gap:platform = "android" gap:qualifier = "hdpi" />
 
-   <icon src = "res/icon/android/drawable-xhdpi/tp_icon.png"
+    <icon src = "res/icon/android/drawable-xhdpi/tp_icon.png"
       gap:platform = "android" gap:qualifier = "xhdpi" />
 
-   <icon src = "res/icon/android/drawable-xxhdpi/tp_icon.png"
+    <icon src = "res/icon/android/drawable-xxhdpi/tp_icon.png"
       gap:platform = "android" gap:qualifier = "xxhdpi" />
 
-   <icon src = "res/icon/ios/icon76.png" gap:platform = "ios" gap:qualifier = ""/>
-   <icon src = "res/icon/ios/icon40.png" gap:platform = "ios" width = "40" height = "40" />
+    <icon src = "res/icon/ios/icon76.png" gap:platform = "ios" gap:qualifier = ""/>
+    <icon src = "res/icon/ios/icon40.png" gap:platform = "ios" width = "40" height = "40" />
     <icon src = "res/icon/ios/icon76.png" gap:platform = "ios" width = "76" height = "76" />
-   <icon src = "res/icon/ios/icon76x2.png"  gap:platform = "ios" width = "152" height = "152" />
+    <icon src = "res/icon/ios/icon76x2.png"  gap:platform = "ios" width = "152" height = "152" />
+
+
+    <access origin="http://shalabiacademy.com" subdomains="true" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
 
 </widget>
