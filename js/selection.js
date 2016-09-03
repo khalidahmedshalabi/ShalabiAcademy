@@ -6,10 +6,6 @@ $(".scrolltotop").click(function(e)
 	}, 1000);
 });
 
-$(".app_logo").click(function(event) {
-    location.href = "index.html";
-});
-
 var MenuButtonContainer = false;
 
 function MenuButtonContainerDefault()
