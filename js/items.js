@@ -10,50 +10,24 @@ $(window).resize(function()
     FixItemHeight();
 });
 
-var SelectedYear = false;
-
 $(".item_year").not(".disabled_year_item").hover(
 
     function ()
     {
-        if(SelectedYear == false)
-        {
-            var sound = document.getElementById("PageTurningSound");
-            sound.currentTime = 0;
-            sound.volume = 0.2;
-            sound.play();
+        var sound = document.getElementById("PageTurningSound");
+        sound.currentTime = 0;
+        sound.volume = 0.2;
+        sound.play();
 
-            $(this).find('img').stop().velocity({height: "100%"}, {duration: 300, queue: false});
+        $(this).find('img').stop().animate({height: "100%"}, {duration: 300, queue: false});
 
-            $(this).find('p').css('display', 'none');
-        }
+        $(this).find('p').css('display', 'none');
     },
     function ()
     {
-        if(SelectedYear == false)
-        {
-            var dis = $(this);
-            dis.find('img').stop().velocity({height: "60%"}, {duration: 800, queue: false, complete: function () {
-                dis.find('p').css('display', 'inline');
-            }});
-        }
-    }
-);
-
-$(".item_year").not(".disabled_year_item").click(
-
-    function ()
-    {
-        SelectedYear = true;
-        $(this).find('img').css("height", "70%");
-        $(this).removeClass('papers');
-        $(this).removeClass('ruled_paper1');
-        $(".item_year").not(this).fadeOut(990);
-        $(".item_year").not(this).velocity({width:"0%"}, {duration: 500, queue: false});
-        $(this).velocity({fontSize: "150%", width:"40%"}, {duration: 500, queue: false, complete: function () {
-            $(".item_year").fadeOut(500, function() {
-                location.href = "selection.html";
-            });;
+        var dis = $(this);
+        dis.find('img').stop().animate({height: "60%"}, {duration: 800, queue: false, complete: function () {
+            dis.find('p').css('display', 'inline');
         }});
     }
 );
