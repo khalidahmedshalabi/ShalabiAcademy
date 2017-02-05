@@ -1,1 +1,1 @@
-<iframe class="show_paper" src="https://drive.google.com/file/d/0B7_UskQ4D8--RFplR1ByZHpmMGc/preview" frameborder="0"></iframe>
+<iframe class="show_paper" src="https://drive.google.com/embeddedfolderview?id=0B7_UskQ4D8--ekcwc0p0V0VPbGs#grid" frameborder="0"></iframe>

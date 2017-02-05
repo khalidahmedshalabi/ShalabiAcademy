@@ -1,0 +1,2 @@
+<iframe class="show_video" src="https://www.youtube.com/embed/C8Rx9RxHt_Y?list=PLwSm6LlXg4dKkBFVER-Aa80xN3UgbTflY" frameborder="0" allowfullscreen></iframe>
+<iframe class="show_video" src="https://www.youtube.com/embed/6HMD25gIWPY?list=PLwSm6LlXg4dKkBFVER-Aa80xN3UgbTflY" frameborder="0" allowfullscreen></iframe>
