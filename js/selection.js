@@ -16,31 +16,45 @@ function MenuButtonContainerDefault()
     $(".menu_button_container").css('color', '#333333');
     $(".menu_button_container").css('font-size', '350%');
     $(".menu_button_container").css("box-shadow", "none");
+    $(".app_logo").css("width", "7%");
+    MenuButtonContainerAnim = false;
+    MenuButtonContainer = false;
 }
 
 MenuButtonContainerDefault();
 
+var MenuButtonContainerHeight = $(".menu_button_container").height();
+
+$(window).resize(function() {
+    MenuButtonContainerHeight = $(".menu_button_container").height();
+});
+
+
+var MenuButtonContainerAnim = false;
+
 $(document).scroll(function(event) {
-    if($(document).scrollTop() > $(".menu_button_container").height())
+
+    if($(document).scrollTop() > MenuButtonContainerHeight)
     {
-        if(MenuButtonContainer == false)
+        if(MenuButtonContainer == false && MenuButtonContainerAnim == false)
         {
-            MenuButtonContainer = true;
-            $(".menu_button_container").css('display', 'none');
+            MenuButtonContainerAnim = true;
             $(".menu_button_container").css('background-color', 'rgba(255, 255, 255, 0.9)');
             $(".menu_button_container").css('color', '#333333');
             $(".menu_button_container").css('position', 'fixed');
             $(".menu_button_container").css('top', '-5%');
-            $(".menu_button_container").animate({top: "0%", fontSize:"350%"}, {duration: 700, queue: false});
-            $(".menu_button_container").fadeIn('500');
+            $(".menu_button_container").animate({top: "0%", fontSize: "250%"}, {duration: 700, queue: false, complete: function () {
+                MenuButtonContainerAnim = false;
+            }});
             $(".menu_button_container").css("box-shadow", "0px 9px 20px -10px rgba(0,0,0,0.75)");
+            $(".app_logo").css("width", "4%");
+            MenuButtonContainer = true;
         }
     }
     else
     {
         if(MenuButtonContainer == true)
         {
-            MenuButtonContainer = false;
             MenuButtonContainerDefault();
         }
     }
