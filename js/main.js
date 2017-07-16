@@ -38,13 +38,13 @@ $(".StartLearningButton").click(function(e)
 
 $(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
 
-$(".StartLearningButton").hover(function() {
+/*$(".StartLearningButton").hover(function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.7)");
 	$(".banner_title").css('background-color', 'rgba(255, 255, 255, 0.3)');
 }, function() {
 	$(".section_welcome").css("box-shadow", "inset 0 0 0 1000px rgba(0,0,0,0.3)");
 	$(".banner_title").css('background-color', 'rgba(0, 0, 0, 0.2)');
-});
+});*/
 
 $(".start_learning_coffee").css('display', 'none');
 setInterval(function () {

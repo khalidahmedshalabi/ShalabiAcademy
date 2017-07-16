@@ -211,13 +211,6 @@ a
 
 .banner_title
 {
-    animation-name: banner_title_anim;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-
     color:white;
     text-align:center;
     font-size:150%;
