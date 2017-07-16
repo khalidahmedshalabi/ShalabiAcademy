@@ -53,8 +53,9 @@
 
     .subjects
     {
-        width:100%;
-        margin: 0%;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
         margin-bottom: 10%;
     }
 
