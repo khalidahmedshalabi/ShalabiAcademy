@@ -17,6 +17,11 @@ a
     color: inherit;
 }
 
+p
+{
+    margin: 0;
+}
+
 .arkufi
 {
     font-family: 'Droid Arabic Kufi', serif;
@@ -29,7 +34,7 @@ a
 
 .scrolltotop
 {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #DDDDDD;
     font-size: 250%;
     padding: 1%;
@@ -38,6 +43,7 @@ a
     bottom: 3%;
     right: 10%;
     cursor: pointer;
+    font-weight: lighter;
 }
 
 .header
@@ -48,42 +54,6 @@ a
     margin: 0;
 }
 
-.sliding_header
-{
-    display: none;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-
-    position: absolute;
-    top:23%;
-    width: 100%;
-    height:auto;
-    overflow: auto;
-    margin: auto;
-    color:#333333;
-    text-align: center;
-    direction: rtl;
-    padding: 5%;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-}
-
-.sliding_header_close
-{
-    padding: 1%;
-    font-size: 300%;
-    margin: 2%;
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
 .contactus_icon
 {
     font-size: 120%;
@@ -92,6 +62,7 @@ a
 
 .logo
 {
+    font-weight: normal;
     cursor: pointer;
     display: none;
     text-align: left;
@@ -130,62 +101,13 @@ a
     border-bottom-width: thin;
     border-bottom-color: white;
     font-family: 'Poiret One', cursive;
+    display: inline;
 }
 
 .logo_info
 {
-    font-size: 80%;
-}
-
-.header_toggle
-{
-    display: none;
-}
-
-.header_button_container
-{
-    background-color: transparent;
-    position: absolute;
-    right: 2%;
-    font-size: 120%;
-    text-align: right;
-}
-
-.header_button
-{
-    text-align: center;
     display: inline;
-    cursor: pointer;
-    padding-left:7px;
-    padding-right:7px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    border-bottom-width: thin;
-    border-left-style: solid;
-    border-left-color: white;
-    border-left-width: thin;
-    border-radius: 5%;
-}
-
-.header_button:hover
-{
-    animation-name: header_button_anim;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes header_button_anim
-{
-    to
-    {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-color: transparent;
-        padding-bottom: 1%;
-        font-weight: bolder;
-    }
+    font-size: 80%;
 }
 
 .StartLearningButton
@@ -220,6 +142,14 @@ a
     background-color: rgba(0, 0, 0, 0.2);
     display: inline-block;
     padding: 1%;
+}
+
+.section_title
+{
+    text-align: center;
+    font-size: 250%;
+    font-weight: normal;
+    color: #333333;
 }
 
 .section_welcome
