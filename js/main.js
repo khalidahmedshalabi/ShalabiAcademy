@@ -108,9 +108,3 @@ $(".banner_title").ready(function () {
         });
     }, 3000);
 });
-
-$(".moving_section").hover(function() {
-	$(this).animate({fontSize: "+=3%"}, {duration: 500, queue: false});
-}, function() {
-	$(this).animate({fontSize: "100%"}, {duration: 500, queue: false});
-});
