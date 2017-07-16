@@ -196,7 +196,9 @@ p
 
 .section_features_links
 {
-    padding: 7px;
+    padding: 0.1%;
+    padding-right: 0.7%;
+    padding-left: 0.7%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #EEEEEE;
     margin: 1%;
