@@ -484,10 +484,10 @@ p
     display: inline-block;
     width:65%;
     border-left-style: solid;
-    border-left-color: #333333;
+    border-left-color: #111111;
     border-left-width: thin;
     border-right-style: solid;
-    border-right-color: #333333;
+    border-right-color: #111111;
     border-right-width: thin;
     color: #CCCCCC;
 }
@@ -504,12 +504,12 @@ p
 .footer_content_box
 {
     float: left;
-    font-size: 70%;
+    font-size: 100%;
     text-align: left;
     margin: 3%;
     margin-top: 10%;
     border-left-style: solid;
-    border-left-color: #333333;
+    border-left-color: #111111;
     border-left-width: thin;
     padding-left: 3%;
 }
