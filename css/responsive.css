@@ -16,36 +16,9 @@
         height:15%;
     }
 
-    .header_button_container
-    {
-        top:11%;
-        right: 3%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-        z-index: 1;
-    }
-
     .welcome_text_container
     {
         width: 60%;
-    }
-
-    .header_toggle
-    {
-        display: block;
-        float:right;
-        text-align: right;
-        margin:3%;
-        color:white;
-        background-color:rgba(0, 0, 0, 0.1);
-        font-size: 150%;
-        padding:1%;
-        border-radius: 4%;
-    }
-
-    .header_button
-    {
-        display: block;
     }
 
     .StartLearningButton
