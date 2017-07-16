@@ -1,6 +1,6 @@
 function FixItemHeight()
 {
-    $(".item_year").height(($(window).height() - $(".header").height() - ($(window).height() * 0.4)));
+    $(".item_year").height(($(window).height() - $(".header").height() - ($(window).height() * 0.3)));
 }
 
 FixItemHeight();
