@@ -16,7 +16,6 @@ function MenuButtonContainerDefault()
     $(".menu_button_container").css('color', '#333333');
     $(".menu_button_container").css('font-size', '350%');
     $(".menu_button_container").css("box-shadow", "none");
-    $(".app_logo").css("width", "7%");
     MenuButtonContainerAnim = false;
     MenuButtonContainer = false;
 }
@@ -47,7 +46,6 @@ $(document).scroll(function(event) {
                 MenuButtonContainerAnim = false;
             }});
             $(".menu_button_container").css("box-shadow", "0px 9px 20px -10px rgba(0,0,0,0.75)");
-            $(".app_logo").css("width", "4%");
             MenuButtonContainer = true;
         }
     }
