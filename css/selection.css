@@ -121,7 +121,6 @@ a
     {
         background-color: #CCCCCC;
         color: #444444;
-        border-bottom-width: thick;
         border-bottom-color: #555555;
     }
 }
@@ -151,6 +150,7 @@ a
     margin-bottom: 4%;
     width: 100%;
     padding: 0.5%;
+    font-size: 320%;
 }
 
 .instructions
